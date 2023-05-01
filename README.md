@@ -3,12 +3,10 @@ A regression analysis tool using strealmit and statsmodels
 
 [This dashboard is currently live on streamlit community cloud.](https://)
 
----
 ## Purpose
 
 This app was created as an example of creating interactive statstical modelling software
 
----
 ## Using the app
 
 Example data is available in the **Real estate valuation data set.csv** file in this repo. A description of the data available on the [UCI website](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set).
@@ -31,7 +29,6 @@ The dashboard is split into **three** sections and a sidebar
         * Note 1: The dependent variable **must** be numerical, categorical variables are not allowed. If you have a categorical variable that is encoded numerically (e.g. a vector such as [1,1,2,1,3,1,2,3,3,3,2]) then the model will naively take that variable to be cardinal and run the regression accordingly.
         * Note 2: If your explanatory variable is categorical, dummies will be automatically created as long as there are **five or fewer** unique values.
 
----
 ## Potential Extensions
 This app is by no means meant to be a complete statistical modelling package and can be exented to add any arbitrary additional functionality. Examples include:
 
