@@ -159,9 +159,17 @@ if __name__ == '__main__':
                         break
                 else:
                     X = pd.concat([X, df[variable]], axis=1)
+
+            if df[dependent_variable].dtype == 'O':
+                st.subheader(f'Dependent Variable "{dependent_variable}" is categorical. Please use a numeric variable.')
+                run_regression = False
+                
+            else:
+                y = df[dependent_variable]
+
             
             if run_regression:
-                y = df[dependent_variable]
+                
 
                 model = sm.OLS(y, X).fit()
                 st.markdown(model.summary()._repr_html_(), unsafe_allow_html=True)
