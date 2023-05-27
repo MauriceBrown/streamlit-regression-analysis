@@ -39,5 +39,5 @@ This app is by no means meant to be a complete statistical modelling package and
 2. Modelling functionalty
     * More detailed model output
     * Allowing for **multiple** dependent variables for SEM, path or VAR modelling etc
-    * Adding different linear regression models (e.g. probit, quantile regression, lasso/ridge or other coeffieicnt constraint models)
+    * Adding different linear regression models (e.g. probit, quantile regression, lasso/ridge or other coefficient constraint models)
     * Adding functionality for classification models (e.g. SVM, naive bayes, tree models, neural network classifiers etc)
