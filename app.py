@@ -84,6 +84,7 @@ if __name__ == '__main__':
     st.sidebar.header('Upload Data:')    
     
     uploaded_file = st.sidebar.file_uploader('Choose a file')
+    st.markdown('[Download example data here](https://github.com/MauriceBrown/streamlit-regression-analysis/blob/main/Real%20estate%20valuation%20data%20set.csv)')
     if uploaded_file is not None:
         try:
             df = pd.read_csv(uploaded_file)
